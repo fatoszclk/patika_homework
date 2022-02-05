@@ -1,0 +1,15 @@
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+
+
+                 [7, 5, 1, 8, 3, 6, 0, 9, 4, 2]   - root 7
+                 
+                             7                   --> sıradaki değer olan 5 değerine bakalım. 7'den küçük olduğu için sola yazılmalı
+                          /     \                --> sıradaki değer olan 1 değerine bakalım. 7'den küçük olduğu için sola yazılmalı ama 5dende küçük olduğu için yeni bir dal oluşturulmalı
+                         5        8              --> sıradaki değer olan 8 değerine bakalım. 7'den büyük olduğu için sağa yazılmalı
+                       /  \         \            --> sıradaki değer olan 3 değerine bakalım. 7'den ve 5'den küçük ama 1'den büyük olduğu için 1'in sağına yazılmalı
+                     1     6         9           --> sıradaki değer olan 6 değerine bakalım. 7'den küçük ama 5'den büyük olduğu için 5'in sağına yazılmalı
+                    / \                          --> sıradaki değer olan 0 değerine bakalım. 7,5 ve 1'den küçük olduğu için sola yeni bir dal oluşturulmalı ve oraya yazılmalı
+                   0   3                         --> sıradaki değer olan 9 değerine bakalım. 7 ve 8'den büyük olduğu için sağa yazılmalı
+                      /  \                       --> sıradaki değer olan 4 değerine bakalım. 7 ve 5'den küçük , 1 ve 3'den büyük olduğu için sağa yazılmalı
+                     2     4                     --> sıradaki değer olan 2 değerine bakalım. 7 ve 5'den küçük , 1'den büyük ve 3'den küçük olduğu için sola yazılmalı
+                 
