@@ -1,0 +1,14 @@
+[16,21,11,8,12,22] -> Merge Sort
+
+1-Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+2-Big-O gösterimini yazınız.
+
+1.    [16,21,11,8,12,22] 
+    a-   [16,21,11]      [8,12,22]    --> n/2
+    b-  [16, 21] [11]  [8, 12] [22]   --> n/4
+    c- [16] [21] [11]  [8] [12] [22]  --> n/8
+    d-  [16, 21] [11]    [8, 12] [22] 
+    e-  [11, 16, 21]    [8, 12, 22] 
+    f-    [8, 11, 12, 16, 21, 22]  ------> 2^x = n
+                                   ------> x = log(n)
+2.                                 ------> n seviye ağaç için toplam  "n.2^n" karşılaştırma yapılır. Bu sebeple Big-O gösterimi "O(n*log(n))" olacaktır.
