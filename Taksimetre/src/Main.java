@@ -8,7 +8,7 @@ public class Main {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Gidilen km bilgisini giriniz:");
+        System.out.print("Gidilen km bilgisini giriniz:");
         gidilen_km = input.nextDouble();
 
         tutar = acilis + gidilen_km * ucret;
